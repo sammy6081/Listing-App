@@ -1,0 +1,34 @@
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center; 
+    font-family: sans-serif;
+    color: #00b386;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.hero-text-title{
+    position: absolute;
+    top: 21%;
+    font-size: 5rem;
+}
+.hero-text-subtitle{
+    position: absolute;
+    top: 19%;
+    font-size: 1.3rem;
+}
+.hero-img{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .hero-text-subtitle{
+        font-size: .9rem;
+    }
+    .hero-text-title{
+        font-size: 1.8rem;
+    }
+}

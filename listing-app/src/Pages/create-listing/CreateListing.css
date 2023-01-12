@@ -1,0 +1,62 @@
+.upload-create-listing-img{
+    cursor: pointer;
+}
+.create-listing{
+    padding-top: 2.5rem;
+}
+.create-listing-form-group{
+    margin-left: 7.5rem;
+    display: flex;
+    align-items: center;
+}
+.upload-icon{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #00b386;
+    font-size: 1.1rem;
+    color: #00b386;
+}
+.create-listing-text{
+    width: 50vw;
+    line-height: 1.1rem;
+    border: none;
+    border-bottom: 3px solid #00b386;
+    height: 1.9rem;
+    font-size: 1rem;
+    padding: 2px;
+    outline: none;
+}
+.create-listing-desc{
+    height: 3.5rem;
+    margin-top: 1.8rem;
+    overflow: hidden;
+    resize: none;
+    border: 3px solid #00b386;
+    border-radius: .4rem;
+}
+.create-listing-button{
+    margin: 20px 0 20px 7.5rem;
+    width: 50vw;
+    height: 2.5rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: #00b386;
+    font-weight: bold;
+    border: none;
+    border-radius: .4rem;
+}
+
+@media (max-width: 600px) {
+    .create-listing-form-group{
+        margin-left: 10%;
+        width: 70%;
+    }
+    .create-listing-button{
+        margin: 20px 0 20px 10%;
+        width: 70vw;
+    }
+}

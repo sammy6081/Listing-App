@@ -1,0 +1,12 @@
+.listing-section{
+    flex: 9;
+    display: flex;
+    flex-wrap: wrap;/*equally place the children on the row based on the available width and move the rest to the next row*/
+    margin: 1.2rem;
+    justify-content: center;
+}
+@media (max-width: 600px) {
+    .listing-section{
+        justify-content: center;
+    }
+}
