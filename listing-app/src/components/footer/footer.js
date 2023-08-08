@@ -44,7 +44,7 @@ return (
         <div class="footer-foot">
             <p>
             copyright &copy; YourRealtor
-            <span id="date"></span>. all rights reserved
+            <span id="date">2023</span>. all rights reserved
             </p>
             <div class="icons">
                 <FontAwesomeIcon icon={faYoutube}/>
