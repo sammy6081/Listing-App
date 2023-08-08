@@ -1,3 +1,4 @@
+import './App.css'
 import TopBar from "./components/top bar/TopBar";
 import CreateListing from "./Pages/create-listing/CreateListing";
 import Home from "./Pages/hompages/home";

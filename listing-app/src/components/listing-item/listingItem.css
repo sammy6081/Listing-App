@@ -17,28 +17,6 @@ Variables
 */
 
 
-:root {
-    
-    font-size: 15px;
-    
-    /* Primary */
-    --var-soft-blue: hsl(215, 51%, 70%);
-    --var-cyan: hsl(178, 100%, 50%);
-    /* Neutral */
-    --var-main-darkest: hsl(217, 54%, 11%);
-    --var-card-dark: hsl(216, 50%, 16%);
-    --var-line-dark: hsl(215, 32%, 27%);
-    --var-lightest: white;
-    
-    /* Fonts */
-    
-    --var-heading: normal normal 600 1.5em/1.6em 'Outfit', sans-serif;
-    
-    --var-small-heading: normal normal 400 1em/1em 'Outfit', sans-serif;
-    
-    --var-para: normal normal 300 1em/1.55em 'Outfit', sans-serif;
-}
-
 /* 
 =======================
 Setup
@@ -63,20 +41,19 @@ Font Styling
 */
 
 h1 {
-    font: var(--var-heading);
-    color: var(--var-lightest);
+    font: normal normal 600 1.5em/1.6em 'Outfit', sans-serif;
+    color: white;
     padding: 1.2em 0;
 }
 
 h2 {
-    font: var(--var-small-heading);
-    color: var(--var-lightest);
-    /* padding on .coin-base */
+    font: normal normal 400 1em/1em 'Outfit', sans-serif;
+    color: white;
 }
 
 p {
-    font: var(--var-para);
-    color: var(--var-soft-blue);
+    font: normal normal 300 1em/1.55em 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
 }
 
 span {
@@ -94,7 +71,7 @@ Classes
     width: 100%;
     max-width: 400px;
     margin: 2em auto;
-    background-color: var(--var-card-dark);
+    background-color: hsl(216, 50%, 16%);
     border-radius: 15px;
     margin-bottom: 1rem;
     padding: 2rem;
@@ -114,7 +91,7 @@ div.coin-base, .time-left, .card-attribute {
 
 .card-attribute {
     padding-bottom: 1.5em;
-    border-top: 2px solid var(--var-line-dark);
+    border-top: 2px solid hsl(215, 32%, 27%);
 }
 
 a.hero-image-container {
@@ -164,13 +141,13 @@ a.hero-image-container {
 div.attribution {
     margin: 0 auto;
     width: 100%;
-    font: var(--var-para);
+    font: normal normal 300 1em/1.55em 'Outfit', sans-serif;
     text-align: center;
     padding: 1.5em 0 4em 0;
-    color: var(--var-line-dark);
+    color: hsl(215, 32%, 27%);
 }
 .attribution a {
-    color: var(--var-soft-blue);
+    color: hsl(215, 51%, 70%);
 }
 
 @media (min-width:600px) {

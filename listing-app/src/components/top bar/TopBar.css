@@ -72,7 +72,7 @@ a,a:visited,a:hover,a:active{
 .menu-button{
     display: none;
     }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .topbar-list, .topbar-left > div {
         display: none;
     }
@@ -87,7 +87,7 @@ a,a:visited,a:hover,a:active{
     margin-left: 2.5rem;
     }
 }
-@media (max-width: 912px) {
+@media (max-width: 1024px) {
     .topbar-list-item{
         font-size: .8rem;
         margin-right: .6rem;

@@ -1,0 +1,109 @@
+/* Footer Styles */
+footer {
+    background: #00b386;
+    padding: 5rem 1rem 2rem 1rem;
+    text-transform: capitalize;
+  }
+  footer .footer-center {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+  }
+  footer .footer-center .logo-con {
+    width: 8rem;
+    height: 5rem;
+  }
+  footer .footer-center .logo-con img {
+    width: inherit;
+    height: inherit;
+  }
+  footer .footer-center .list {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  footer .footer-center .list h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  footer .footer-center .list a {
+    text-decoration: none;
+    margin-bottom: 0.4rem;
+    color: #fff;
+  }
+  footer .footer-center .list a:hover {
+    color: #3671E9;
+  }
+  footer .footer-center .list-3 {
+    color: #fff;
+  }
+  footer .footer-center .list-3 h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  footer .footer-center .list-3 .method-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  footer .footer-center .list-3 .method-con .method {
+    width: 4rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  footer .footer-center .list-3 .method-con .method .img {
+    width: inherit;
+    height: inherit;
+  }
+  footer .footer-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    margin: 1.2rem;
+  }
+  footer .footer-foot .icons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer .footer-foot .icons i {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 0.6rem;
+    cursor: pointer;
+  }
+
+footer .footer-foot p {
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-foot{
+        flex-direction: column-reverse;
+        row-gap: 2rem;
+    }
+}
+
+  @media screen and (max-width: 1023px) {
+    .flex{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+  footer {
+    text-align: center;
+  }
+  
+  footer .footer-center {
+    display: grid;
+    grid-template-columns: 2fr; /* Equivalent to grid-template-columns: 1fr 1fr; */
+  }
+  
+  footer .footer-foot {
+    padding: 0 1.5rem;
+  }
+}

@@ -29,9 +29,7 @@ html {
   align-items: center;
   justify-content: center; */
   width: 100%;
-  min-height: 100vh;
   margin: 0;
-  
   backface-visibility: hidden; /* Force GPU Usage */
 }
 
@@ -165,14 +163,22 @@ figure figcaption h1::after {
     height: 40px;
   }
 }
-
-@media (max-width: 400px) {
-  figure figcaption h1 {
-    font-size: 54pt;
-    line-height: 62pt;
+@media (max-width: 768px) {
+  figure figcaption h1::after {
+    height: 10px;
+    background: white;
+    content: "";
+    transition: all 1s ease;
   }
+}
+
+@media (max-width: 480px) {
   figure figcaption h1 {
-    font-size: 24pt;
+    font-size: 44pt;
     line-height: 42pt;
+  }
+  figure figcaption p {
+    font-size: 14pt;
+    line-height: 14pt;
   }
 }
