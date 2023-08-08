@@ -19,10 +19,12 @@
 .sidebar-subsection > p{
     padding: .9rem;
     text-align: center;
+    color: #222;
 }
 .sidebar-title{
     margin: .9rem;
     padding: .4rem;
+    color: #222;
     text-transform: uppercase;
     border-top: 2px solid #00b386;
     border-bottom: 2px solid #00b386;

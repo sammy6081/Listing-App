@@ -1,5 +1,7 @@
 import React from 'react';
 import './sidebar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 function sidebar() {
   return (
@@ -23,10 +25,10 @@ function sidebar() {
         <div className='sidebar-subsection'>
             <span className='sidebar-title'>follow us on</span>
             <div className='sidebar-social-icons'>
-                <i className="sidebar-social-icon fa-brands fa-instagram"></i>
-                <i className="sidebar-social-icon fa-brands fa-twitter"></i>
-                <i className="sidebar-social-icon fa-brands fa-facebook-f"></i>
-                <i className="sidebar-social-icon fa-brands fa-linkedin"></i>
+                <FontAwesomeIcon className='topbar-social-icon' icon={faInstagram}/>
+                <FontAwesomeIcon className='topbar-social-icon' icon={faXTwitter}/>
+                <FontAwesomeIcon className='topbar-social-icon' icon={faFacebook}/>
+                <FontAwesomeIcon className='topbar-social-icon' icon={faLinkedin}/>
             </div>
         </div>
     </div>

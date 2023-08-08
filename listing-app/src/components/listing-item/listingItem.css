@@ -1,45 +1,180 @@
-.listing-Item{
-    width: 16rem;
-    margin: 0px 25px 40px 25px;
-    font-family: sans-serif;
+
+/* 
+=========================
+Fonts
+=========================
+
+font-family: 'Outfit', sans-serif;
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* 
+========================
+Variables
+========================
+*/
+
+
+:root {
+    
+    font-size: 15px;
+    
+    /* Primary */
+    --var-soft-blue: hsl(215, 51%, 70%);
+    --var-cyan: hsl(178, 100%, 50%);
+    /* Neutral */
+    --var-main-darkest: hsl(217, 54%, 11%);
+    --var-card-dark: hsl(216, 50%, 16%);
+    --var-line-dark: hsl(215, 32%, 27%);
+    --var-lightest: white;
+    
+    /* Fonts */
+    
+    --var-heading: normal normal 600 1.5em/1.6em 'Outfit', sans-serif;
+    
+    --var-small-heading: normal normal 400 1em/1em 'Outfit', sans-serif;
+    
+    --var-para: normal normal 300 1em/1.55em 'Outfit', sans-serif;
 }
-.listing-img{
+
+/* 
+=======================
+Setup
+=======================
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img {
     width: 100%;
-    object-fit: cover;
-    height: 17rem;
-    border-radius: .4rem;
+    border-radius: 15px;
+    display: block;
 }
-.item-details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+/*
+=========================
+Font Styling
+=========================
+*/
+
+h1 {
+    font: var(--var-heading);
+    color: var(--var-lightest);
+    padding: 1.2em 0;
+}
+
+h2 {
+    font: var(--var-small-heading);
+    color: var(--var-lightest);
+    /* padding on .coin-base */
+}
+
+p {
+    font: var(--var-para);
+    color: var(--var-soft-blue);
+}
+
+span {
+    color: white;
+}
+/* 
+=====================
+Classes
+=====================
+*/
+
+/* LAYOUT */
+
+.card-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 2em auto;
+    background-color: var(--var-card-dark);
+    border-radius: 15px;
     margin-bottom: 1rem;
-    line-height: 1.5rem;
+    padding: 2rem;
 }
-.listing-category{
-    line-height: 1.2rem;
-    margin: 1rem .8rem 0 0;
-    color: rgb(123, 124, 126);
-    cursor: pointer;
+
+div.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.listing-title{
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-top: .3rem;
-    cursor: pointer;
+
+div.coin-base, .time-left, .card-attribute {
+    display: flex;
+    align-items: center;
+    padding: 1em 0;
 }
-.listing-time{
-    font-size: 1rem;
-    margin-top: .1rem;
-    color: rgb(123, 124, 126);
+
+.card-attribute {
+    padding-bottom: 1.5em;
+    border-top: 2px solid var(--var-line-dark);
 }
-.listing-description{
-    color: rgb(84, 84, 85);
-    line-height: 1.1rem;
-    margin-top: .1rem;
+
+a.hero-image-container {
+    position: relative;
+    display: block;
+}
+
+
+
+/* Details */
+
+.main-content > p{
+    max-height: 4.5em;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 4; /*show only 4 lines then ellipsis*/
     -webkit-box-orient: vertical;
+}
+.main-content h3{
+    border: 3px solid #00b386;
+    width: 10rem;
+    border-radius: 6px;
+    color: white;
+}
+.main-content h3:hover{
+    border: 3px solid white;
+    border-radius: 6px;
+    background-color: white;
+    transition: all .4s ease-out;
+}
+
+@media (min-width:400px) {
+  img.eye {
+    max-width: 3em;
+}
+}
+
+.small-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    outline: 2px solid white;
+    margin-right: 1.4em;
+}
+
+div.attribution {
+    margin: 0 auto;
+    width: 100%;
+    font: var(--var-para);
+    text-align: center;
+    padding: 1.5em 0 4em 0;
+    color: var(--var-line-dark);
+}
+.attribution a {
+    color: var(--var-soft-blue);
+}
+
+@media (min-width:600px) {
+    body {
+        font-size: 18px;
+    }
 }

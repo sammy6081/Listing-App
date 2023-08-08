@@ -1,9 +1,43 @@
+.section-heading{
+    font-family:'Poppins', sans-serif;
+    letter-spacing: var(--mainSpacing);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: #00b386;
+    padding: 0.5rem;
+}
 .listing-section{
     flex: 9;
     display: flex;
     flex-wrap: wrap;/*equally place the children on the row based on the available width and move the rest to the next row*/
+    gap: 2rem;
     margin: 1.2rem;
     justify-content: center;
+    margin-top: 0;
+}
+.toggle-btn{
+    background:#3485d7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding:.5em 1em ;
+    font-size: inherit;
+    cursor: pointer;
+    outline:none!important;
+    transition: all ease 0.3s;
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+    text-align: left;
+    box-shadow: inset -1px -1px #fff,inset  1px;
+    top:-1%;
+    right: -.5%;
+    height:fit-content;
+    align-items:center;
+    line-height: normal;
 }
 @media (max-width: 600px) {
     .listing-section{

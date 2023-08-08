@@ -1,15 +1,21 @@
 import React from 'react'
 import './TopBar.css'
 import { NavLink } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faInstagram, faFacebook,faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 function TopBar() {
   return (
     <div className='topbar'>
         <div className='topbar-left'>
-            <i className="topbar-social-icon fa-brands fa-instagram"></i>
-            <i className="topbar-social-icon fa-brands fa-twitter"></i>
-            <i className="topbar-social-icon fa-brands fa-facebook-f"></i>
-            <i className="topbar-social-icon fa-brands fa-linkedin"></i>
+        <img className='topbar-logo' src={require('../../images/Webwise_logo.png')} alt='logo'/>
+            <div>
+                <FontAwesomeIcon className='topbar-social-icon' icon={faInstagram}/>
+                <FontAwesomeIcon className='topbar-social-icon' icon={faXTwitter}/>
+                <FontAwesomeIcon className='topbar-social-icon' icon={faFacebook}/>
+                <FontAwesomeIcon className='topbar-social-icon' icon={faLinkedin}/>
+            </div>
         </div>
         <div className='topbar-center'>
             <ul className='topbar-list'>
@@ -23,14 +29,15 @@ function TopBar() {
                 </li>
                 <li className='topbar-list-item'>Log-out</li>
             </ul>
+            <div className='topbar-right'>
+                <img className='topbar-profile' src='https://images.pexels.com/photos/7148620/pexels-photo-7148620.jpeg?auto=compress&cs=tinysrgb&w=600' alt='profile-pic'/>
+                <FontAwesomeIcon className='topbar-search' icon={faMagnifyingGlass}/>
+                <button className='menu-button'>
+                    <NavLink to={'/MenuNav'}><FontAwesomeIcon className='menu-button-icon' icon={faBars}/></NavLink>
+                </button>
+            </div>
         </div>
-        <div className='topbar-right'>
-            <img className='topbar-profile' src='https://images.pexels.com/photos/7148620/pexels-photo-7148620.jpeg?auto=compress&cs=tinysrgb&w=600' alt='profile-pic'/>
-            <i className="topbar-search fa-solid fa-magnifying-glass"></i>
-            <button className='menu-button'>
-                <NavLink to={'/MenuNav'}><i className='menu-button-icon fas fa-bars'></i></NavLink>
-            </button>
-        </div>
+        
     </div>
   )
 }
